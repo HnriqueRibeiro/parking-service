@@ -17,23 +17,23 @@ class Customer(models.Model):
         max_length=15,
         blank=True,
         null=True,
-        verbose_name='Telefone'
+        verbose_name='cpf'
     )
     phone=models.CharField(
         max_length=20,
         blank=True,
         null=True,
-        verbose_name='Telefone'
+        verbose_name='Telefone',
     )
 
-    created_at=models.DateTimeField(
+    created_at = models.DateTimeField(
         auto_now_add=True,
-        verbose_name='Criando em'
+        verbose_name='Criando em',
     )
 
     updated_at=models.DateTimeField(
         auto_now=True,
-        verbose_name='Atualizado em'
+        verbose_name='Atualizado em',
     )
 
     class Meta:

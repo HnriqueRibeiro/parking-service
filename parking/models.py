@@ -40,10 +40,8 @@ class ParkingRecord(models.Model):
     parking_spot=models.ForeignKey(
         ParkingSpot,
         on_delete=models.PROTECT,
-        blank=True,
-        null=True,
         related_name='parking_spot',
-        verbose_name='Veículo'
+        verbose_name='Vaga'
     )
     entry_time=models.DateTimeField(
         auto_now_add=True,
